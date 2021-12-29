@@ -9,25 +9,11 @@ function SignIn(){
         e.preventDefault();
         const postData = {username, password};
         
-
+        console.log(postData);
         axios.post(`http://localhost:8080/user-service/user/signin`, postData)
             .then((res)=>{
                 console.log(res);
             });
-
-        // const requestOptions = {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify(postData),
-        //     mode: 'no-cors'
-        // };
-        // fetch( requestOptions)
-        //     .then(res => res.json())
-        //     .then((data) => {
-        //         console.log(data);
-        //            
-        //     }
-        // );
         setUsername('');
         setPassword('');  
     }
