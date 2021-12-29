@@ -3,6 +3,8 @@ import SignUp from "./SignUp";
 import Search from "./Search";
 import Tweet from "./Tweet";
 import SocialGrpah from "./SocialGrpah";
+import UserTimeline from "./UserTimeline";
+import HomeTimeline from "./HomeTimeline";
 
 function Parent(){
     return <>
@@ -42,12 +44,13 @@ function Parent(){
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    User timeline service
+                    User timeline service 
+                    
                 </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the User timeline service</strong> 
+                    <strong>This is the User timeline service</strong> <br/><UserTimeline />
                 </div>
                 </div>
             </div>
@@ -59,7 +62,7 @@ function Parent(){
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the Home timeline service</strong> 
+                        <strong>This is the Home timeline service</strong> <br/> <HomeTimeline />
                     </div>
                 </div>
             </div>
